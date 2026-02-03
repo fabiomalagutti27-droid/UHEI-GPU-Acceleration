@@ -1,0 +1,27 @@
+# Ignora file di sistema e IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Ignora file compilati (C++/CUDA)
+*.o
+*.obj
+*.exe
+*.out
+/src/bin/   # Se hai una cartella binari
+
+# Ignora cache Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# DATI PESANTI (GitHub blocca file > 100MB)
+# Decommenta le righe sotto se i file zip o tif sono enormi
+# *.zip
+# *.tif
+# *.tiff
+# data/test_1.zip
+
+# Ignora output temporanei
+output/
+*.log
