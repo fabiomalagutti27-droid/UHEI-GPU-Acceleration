@@ -1,27 +1,44 @@
-# Ignora file di sistema e IDE
+# Operating System & IDE files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 .vscode/
 .idea/
 
-# Ignora file compilati (C++/CUDA)
+# Compiled Binaries & Build Artefacts
 *.o
 *.obj
 *.exe
 *.out
-/src/bin/   # Se hai una cartella binari
+bin/
+build/
+reports/*.ncu-rep
+reports/*.zip
+Nsight_Reports.zip
 
-# Ignora cache Python
+# Python Cache & Virtual Environments
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+env/
 
-# DATI PESANTI (GitHub blocca file > 100MB)
-# Decommenta le righe sotto se i file zip o tif sono enormi
-# *.zip
-# *.tif
-# *.tiff
-# data/test_1.zip
-
-# Ignora output temporanei
+# Temporary Outputs & Generated Data
 output/
 *.log
+temp_heatmap_overlay.png
+output_risk_map.bin
+output_risk_map_*.bin
+final_results.csv
+Chart_*.png
+Grafico_*.png
+Mappa_Rischio_*.png
+Impact_of_Data_Transfer.png
