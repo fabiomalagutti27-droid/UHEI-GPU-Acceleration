@@ -1,0 +1,6 @@
+# GitHub Linguist configuration
+# Treat generated/data notebooks and standalone HTML maps as documentation/vendored
+# so that actual CUDA C++ and Python source code are prominently reflected in repository statistics.
+*.ipynb linguist-documentation=true
+*.html linguist-documentation=true
+data/** linguist-vendored=true
